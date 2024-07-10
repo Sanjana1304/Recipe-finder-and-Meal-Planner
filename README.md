@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Recipe finder and Meal Planner App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- I have developed a comprehensive Recipe Finder and Meal Planner app using React.js to enhance users' culinary experiences. This app empowers users to find recipes based on ingredients available in their fridge, enabling them to make the most out of what they have at home. Additionally, it provides detailed nutrition facts for each recipe, helping users stay informed about their dietary choices. Users can save their favorite recipes for future use and browse through a wide range of available recipes for inspiration. Furthermore, the app offers personalized meal plans for the day, tailored to users' specific dietary preferences and caloric goals. This all-in-one solution aims to simplify meal preparation, promote healthy eating, and reduce food waste.
 
-## Available Scripts
+- ### In my recipe and meal planner app, I utilized multiple APIs to enhance my learning experience. For recipe search results, I used the API Ninjas API. To fetch nutrition facts, I integrated the Edamam API. For meal planning and ingredient-based recipes, I employed the Spoonacular API. Additionally, to save recipes, I launched a localhost server since this is just a front-end project built with React.js.
 
-In the project directory, you can run:
+## HomePage
 
-### `npm start`
+  <img width="1438" alt="Screenshot 2024-07-10 at 9 15 37 PM" src="https://github.com/Sanjana1304/Recipe-finder-and-Meal-Planner/assets/64159652/4e35bd28-ecc9-4067-a570-eaeda8799a6e">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Search for Recipes
+- Discover recipes, dive into the details, and save your favorites for later!
+<img width="1438" alt="Screenshot 2024-07-10 at 9 18 49 PM" src="https://github.com/Sanjana1304/Recipe-finder-and-Meal-Planner/assets/64159652/6bdbc006-2a23-4338-b53a-ebb28256704a">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Recipe (Ingredients, Cooking Instructions and Nutrition Facts)
 
-### `npm test`
+<img width="1438" alt="Screenshot 2024-07-10 at 9 24 12 PM" src="https://github.com/Sanjana1304/Recipe-finder-and-Meal-Planner/assets/64159652/2dbb85f1-85b7-4af5-8651-44c44fed6b27">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Create Magic with your Own Ingrediens available in your home
 
-### `npm run build`
+- Input your fridge ingredients and unlock endless recipe inspiration!
+  <img width="1438" alt="Screenshot 2024-07-10 at 9 18 24 PM" src="https://github.com/Sanjana1304/Recipe-finder-and-Meal-Planner/assets/64159652/9e0f870c-00f8-4c13-93e2-b937b9a42151">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Meal Planner
+ - Get your meals planned for the day (breakfast,lunch and dinner)
+   <img width="1438" alt="Screenshot 2024-07-10 at 9 17 09 PM" src="https://github.com/Sanjana1304/Recipe-finder-and-Meal-Planner/assets/64159652/4505cd7f-5b04-4e99-9103-55e1f6c57c08">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Saved Recipes
+- Access your saved recipes with a breeze!
+  <img width="1438" alt="Screenshot 2024-07-10 at 9 15 42 PM" src="https://github.com/Sanjana1304/Recipe-finder-and-Meal-Planner/assets/64159652/8891678d-6b8c-400e-9bbd-b279bdbec497">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Explore Page
+- Explore weight gain, low-carb recipes grouped together
+  <img width="1438" alt="Screenshot 2024-07-10 at 9 16 13 PM" src="https://github.com/Sanjana1304/Recipe-finder-and-Meal-Planner/assets/64159652/58027500-7356-49a5-a881-67482bda4484">
 
-### `npm run eject`
+## About Page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<img width="1438" alt="Screenshot 2024-07-10 at 9 18 58 PM" src="https://github.com/Sanjana1304/Recipe-finder-and-Meal-Planner/assets/64159652/4cacbdaa-af5a-4051-827d-95dcd82aeb82">
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Built on
+- Visual Studio Code
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Further Development
+- This project can be further developed by integrating Express.js and Node.js to create a robust backend. Using these technologies, we can build RESTful APIs to handle user authentication, manage recipe data, and store user preferences. Implementing a database like MongoDB or PostgreSQL will enable efficient storage and retrieval of user details, saved recipes, and meal plans. With user authentication, we can offer personalized experiences, such as custom meal recommendations and secure access to saved recipes. Additionally, leveraging the power of Node.js and Express.js will allow for seamless server-side processing and improved performance, making the app more scalable and responsive. This combination will transform the project into a full-stack application with enhanced functionality and user engagement.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
