@@ -4,7 +4,7 @@ import Header from './Header';
 import RecipeTemplate from './RecipeTemplate';
 import  './index.css';
 
-const SavedRecNavig = ({savedData,setSavedData,nutriData,setNutriData}) => {
+const SavedRecNavig = ({savedData,setSavedData,setNutriData}) => {
     const {id} = useParams();
     const ourDish = savedData[id];
     const ingredientsArray = ourDish.ingredients.split('|');

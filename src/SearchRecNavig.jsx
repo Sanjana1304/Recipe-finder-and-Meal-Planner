@@ -1,8 +1,7 @@
-import React, { useState,useEffect } from 'react'
+import React from 'react'
 import { useParams } from 'react-router-dom'
 import Header from './Header';
 import RecipeTemplate from './RecipeTemplate';
-import getNutrition from './api/fetchNutrition';
 
 const SearchRecNavig = ({recipeData,savedData,setSavedData,setNutriData,nutriData,searchVal}) => {
   const {id} = useParams();

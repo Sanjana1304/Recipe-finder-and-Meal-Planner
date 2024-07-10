@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/' element={<Home savedData={savedData} searchVal={searchVal} setSearchVal={setSearchVal} recipeData={recipeData} setrecipeData={setrecipeData} fetchError={fetchError} setFetchError={setFetchError}/>}/>
+        <Route path='/' element={<Home searchVal={searchVal} setSearchVal={setSearchVal} recipeData={recipeData} setrecipeData={setrecipeData} fetchError={fetchError} setFetchError={setFetchError}/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/explore' element={<Explore/>}/>
 
@@ -49,7 +49,7 @@ function App() {
         <Route path='/mealplan' element={<MealPlannerPage/>}/>
 
         <Route path='/saved' element={<SavedRecipe savedData={savedData} fetchError={fetchError} who={""} head={"Your Saved Recipes"} searchVal={""}/>}/>
-        <Route path='/saved/:id' element={<SavedRecNavig savedData={savedData} setSavedData={setSavedData} nutriData={nutriData} setNutriData={setNutriData} />}/>
+        <Route path='/saved/:id' element={<SavedRecNavig savedData={savedData} setSavedData={setSavedData} setNutriData={setNutriData} />}/>
         
 
         <Route path='/results' element={<SearchResults recipeData={recipeData} fetchError={fetchError} searchVal={searchVal} />}/>

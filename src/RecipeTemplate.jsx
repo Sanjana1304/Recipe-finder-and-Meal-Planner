@@ -17,7 +17,7 @@ const RecipeTemplate = ({ ourDish, ingredientsArray, cookingInstructions, button
             instructions: ourDish.instructions,
             nutrition:nutriData
         };
-        const response = await api1.post('/saved', newRecipe);
+        await api1.post('/saved', newRecipe);
         const updated_savedData = [...savedData, newRecipe];
         setSavedData(updated_savedData);
 
@@ -28,7 +28,7 @@ const RecipeTemplate = ({ ourDish, ingredientsArray, cookingInstructions, button
 
     const RemoveTheRecipe = async () => {
         const curr_id = ourDish.id;
-        const response = await api1.delete(`/saved/${ourDish.id}`);
+        await api1.delete(`/saved/${ourDish.id}`);
         const updated_savedData = savedData.filter((saved) => (saved.id !== curr_id));
         setSavedData(updated_savedData);
         console.log("removed hehe");
@@ -49,7 +49,7 @@ const RecipeTemplate = ({ ourDish, ingredientsArray, cookingInstructions, button
         };
 
         (async () => await fetNut())();
-    }, []);
+    }, [searchVal,setNutriData]);
 
     const filterNutrients = (data) => {
         const desiredNutrients = ['ENERC_KCAL', 'FAT', 'CHOCDF', 'FIBTG', 'SUGAR', 'PROCNT', 'CHOLE'];
@@ -68,7 +68,7 @@ const RecipeTemplate = ({ ourDish, ingredientsArray, cookingInstructions, button
 
     const filteredNutrients = nutriData && nutriData.totalNutrients ? filterNutrients(nutriData.totalNutrients) : null;
 
-    //console.log(JSON.stringify(nutriData));
+
 
     return (
         <>
@@ -91,52 +91,6 @@ const RecipeTemplate = ({ ourDish, ingredientsArray, cookingInstructions, button
                         ))}
                     </ul>
                 </div>
-
-                {/* <div className='nutr'>
-                   
-                    <h2>Nutrition Facts</h2>
-                    <br />
-
-                    <h1>Calories : {nutriData ? nutriData.calories : 'Loading...'}</h1>
-                    <br />
-
-                    {
-                        filteredNutrients ? (
-                            <>
-                                <h2>Nutrients:</h2>
-                                <br />
-                                <ul>
-                                    {Object.keys(filteredNutrients).map(key => (
-                                        <li key={key} className='nut-nut-li'>
-                                            {filteredNutrients[key].label}: {filteredNutrients[key].quantity} {filteredNutrients[key].unit}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </>
-                        ) : <p>Loading...</p>
-                    }
-
-                    <br />
-                    <h3>Diet Labels:</h3>
-
-                    <br />
-                    <ul>
-                        {nutriData && nutriData.dietLabels ? nutriData.dietLabels.map((dl, index) => (
-                            <li className='nut-nut-li' key={index}>{dl}</li>
-                        )) : <p>Loading...</p>
-                        }
-                    </ul>
-                    <h3>Health Labels:</h3>
-                    
-                    <br />
-                    <ul>
-                        {nutriData && nutriData.healthLabels ? nutriData.healthLabels.slice(0, 5).map((hl, index) => (
-                            <li className='nut-nut-li' key={index}>{hl}</li>
-                        )) : <p>Loading...</p>
-                        }
-                    </ul>
-
-                </div> */}
 
                 <NutritionComponent
                 nutriData={nutriData}

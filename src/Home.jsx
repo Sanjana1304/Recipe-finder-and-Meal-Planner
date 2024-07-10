@@ -2,10 +2,9 @@ import React from 'react'
 import './index.css';
 import Header from './Header';
 import Main from './Main';
-import SavedRecipe from './SavedRecipe';
 import OptionsBar from './OptionsBar';
 
-const Home = ({savedData,searchVal,setSearchVal,recipeData,setrecipeData,fetchError,setFetchError}) => {
+const Home = ({searchVal,setSearchVal,recipeData,setrecipeData,fetchError,setFetchError}) => {
   
   return (
     <>

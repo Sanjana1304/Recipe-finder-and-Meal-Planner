@@ -6,7 +6,7 @@ import getMealPlan from './api/fetchMealPlan';
 const MealPlannerPage = () => {
     
     const [loading, setLoading] = useState(false);
-    const [error, setError] = useState(null);
+    const [kerror, setError] = useState(null);
     
     const [cal,setCal] = useState(0);
     const [diet,setDiet] = useState('');
@@ -24,6 +24,7 @@ const MealPlannerPage = () => {
             setMealData(data);
         } catch (error) {
             setError('Failed to fetch recipes');
+            console.log(kerror);
         }
         setLoading(false);
       
@@ -85,7 +86,7 @@ const MealPlannerPage = () => {
                     {mealData.meals.map((item,index) => (
                         <>
                     <div className='meal-item' key={item.id}>
-                        {index==0?<h1 className='meal-time'>Breakfast</h1>:index==1?<h1 className='meal-time'>Lunch</h1>:<h1 className='meal-time'>Dinner</h1>}
+                        {index===0?<h1 className='meal-time'>Breakfast</h1>:index===1?<h1 className='meal-time'>Lunch</h1>:<h1 className='meal-time'>Dinner</h1>}
                         <br /><br />
                         <h1>{item.title}</h1>
                         <br />
@@ -93,7 +94,7 @@ const MealPlannerPage = () => {
                         <h2>Servings: {item.servings}</h2>
                         <h2>Ready in {item.readyInMinutes} minutes</h2>
                         <br />
-                        <a href={item.sourceUrl} target='_blank' className='meal-link'>Visit for more details</a>
+                        <a href={item.sourceUrl} target='_blank' className='meal-link' rel="noopener noreferrer">Visit for more details</a>
                     </div>
                     <br /><br />
                     </>

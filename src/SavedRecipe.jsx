@@ -12,7 +12,7 @@ const SavedRecipe = ({savedData,fetchError,who,head,searchVal}) => {
             <div className='saved-head'>{head}</div>
             <div className='recipe-grid'>
             {   !fetchError?
-                savedData.length!=0?
+                savedData.length!==0?
                 savedData.map((saved,index) => (
                     <div className='saved-box' key={index}>
                         {who?
